@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav id="main-nav">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="College Logo">
+                    <span>College Management System</span>
+                </div>
+                <div class="nav-links" id="navLinks"></div>
+                <div class="auth-buttons">
+                    <button id="login-btn" class="btn primary">Login</button>
+                    <button id="register-btn" class="btn secondary">Register</button>
+                    <button id="logout-btn" class="btn warning" style="display: none;">Logout</button>
+                </div>
+            </nav>
+        </header>
+
+        <main id="content">
+            <section class="section">
+                <h1>Courses Management</h1>
+                <div class="toolbar">
+                    <button class="btn primary" id="add-course">Add Course</button>
+                </div>
+                <div class="card-container" id="courses-list"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 College Management System. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <!-- Course Form Modal -->
+    <div id="course-modal" class="modal">
+        <!-- Similar structure to department modal -->
+    </div>
+</body>
+</html>
