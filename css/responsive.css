@@ -48,3 +48,16 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .welcome-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+    .welcome-buttons .btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}

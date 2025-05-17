@@ -5,11 +5,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 /* Header styles */
@@ -169,4 +173,73 @@ th, td {
 th {
     background-color: #f8f9fa;
     font-weight: 600;
+}
+
+footer {
+    background: inherit;
+    width: 100%;
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.5rem;
+    color: #2c3e50;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.section .toolbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.section .toolbar .btn {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.section .toolbar .btn.primary {
+    background: linear-gradient(90deg, #238dd3 60%, #764ba2 100%);
+    color: #fff;
+}
+
+.section .toolbar .btn.primary:hover {
+    background: linear-gradient(90deg, #1c82c5 60%, #5f2c82 100%);
+}
+
+.section .toolbar .btn.secondary {
+    background: linear-gradient(90deg, #2ecc71 60%, #27ae60 100%);
+    color: #fff;
+}
+
+.section .toolbar .btn.secondary:hover {
+    background: linear-gradient(90deg, #27ae60 60%, #145a32 100%);
+}
+
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* full viewport minus header (~80px) */
+    height: calc(100vh - 80px);
+    text-align: center;
+    padding: 2rem;
+}
+.welcome-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+.welcome-buttons .btn {
+    min-width: 140px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
 }
