@@ -64,15 +64,17 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: rgb(5, 19, 99) 0px 2px 8px 0px;
 }
 
 .btn.primary {
-    background-color: #3498db;
+    background:linear-gradient(90deg, #3498db 60%, #0964da 100%);
     color: white;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.08);
 }
 
 .btn.secondary {
-    background-color: #2ecc71;
+    background:linear-gradient(90deg, #2ecc71 60%, #0f9552 100%);
     color: white;
 }
 
@@ -185,7 +187,7 @@ footer {
     font-size: 2.2rem;
     margin-bottom: 1.2rem;
     margin-top: 1.5rem;
-    color: #2c3e50;
+    color: #26303a;
     letter-spacing: 1px;
     font-weight: 700;
 }
@@ -206,12 +208,13 @@ footer {
 }
 
 .section .toolbar .btn.primary {
-    background: linear-gradient(90deg, #238dd3 60%, #764ba2 100%);
+    background: linear-gradient(90deg, #1f83c6 60%, #6957d3 100%);
     color: #fff;
+    box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
 }
 
 .section .toolbar .btn.primary:hover {
-    background: linear-gradient(90deg, #1c82c5 60%, #5f2c82 100%);
+    background: linear-gradient(90deg, #14679e 60%, #5f2c82 100%);
 }
 
 .section .toolbar .btn.secondary {
@@ -236,10 +239,13 @@ footer {
 .welcome-page h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #2c3e50;
+    color: #1d2d3c;
 }
 .welcome-buttons .btn {
     min-width: 140px;
     margin: 0 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    box-shadow: rgb(5, 19, 99) 0px 2px 8px 0px;
 }
