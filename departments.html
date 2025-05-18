@@ -6,11 +6,12 @@
     <title>College Management System</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
     <div id="app">
         <header>
-            <nav id="main-nav">
+            <!-- <nav id="main-nav">
                 <div class="logo">
                     <span>College Management System</span>
                 </div>
@@ -18,7 +19,21 @@
                 <div class="auth-buttons">
                     <button id="logout-btn" class="btn warning">Logout</button>
                 </div>
+            </nav> -->
+
+            <nav class="topnav" id="topNav">
+                <div class="nav-links" id="navLinks">
+                    <a href="departments.html">Departments</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="teachers.html">Teachers</a>
+                    <a href="students.html">Students</a>
+                    <a href="faculties.html">Faculties</a>
+                    <a href="programs.html">Programs</a>
+                    <a href="statistics.html">Statistics</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()"></a>
             </nav>
+
         </header>
 
         <main id="content">

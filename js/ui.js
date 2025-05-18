@@ -35,3 +35,8 @@ const UI = {
 };
 
 window.UI = UI;
+
+function toggleNav() {
+  var nav = document.getElementById("topNav");
+  nav.classList.toggle("responsive");
+}
