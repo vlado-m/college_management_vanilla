@@ -1,21 +1,50 @@
 /* Topnav container */
 .topnav {
-  background-color: #333; overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333; 
+  overflow: hidden;
 }
+
 .topnav .logo {
-  float: left; display: block; color: #fff;
-  font-size: 1.2rem; padding: 14px 16px; text-decoration: none;
+  float: left; 
+  display: block; 
+  color: #fff;
+  font-size: 1.2rem; 
+  padding: 14px 16px; 
+  text-decoration: none;
 }
+
+.topnav .nav-links{
+  flex: 1 1 auto;
+}
+
 .topnav .nav-links a {
-  float: left; display: block; color: #f2f2f2;
-  text-align: center; padding: 14px 16px; text-decoration: none;
+  float: left; 
+  display: block; 
+  color: #f2f2f2;
+  text-align: center; 
+  padding: 14px 16px; 
+  text-decoration: none;
   font-size: 1rem;
 }
+
 .topnav .nav-links a:hover, .topnav .nav-links a.active {
-  background-color: #575; color: #fff;
+  background-color: #575; 
+  color: #fff;
 }
+
 /* Hide hamburger icon by default */
 .topnav .icon { display: none; }
+
+.topnav .auth-buttons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 1.1rem;
+}
 
 /* Responsive: max-width 600px */
 @media screen and (max-width: 600px) {
