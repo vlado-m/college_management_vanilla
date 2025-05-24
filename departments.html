@@ -22,7 +22,10 @@
                     <a href="programs.html">Programs</a>
                     <a href="statistics.html">Statistics</a>
                 </div>
-                <a href="javascript:void(0);" class="icon" onclick="toggleNav()"></a>
+                <!-- <a href="javascript:void(0);" class="icon" onclick="toggleNav()"></a> -->
+                <div class="auth-buttons">
+                    <button id="logout-btn" class="btn warning">Logout</button>
+                </div>
             </nav>
 
         </header>
@@ -42,7 +45,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <!-- Default table headers -->
                             <th>Department Name</th>
                             <th>Faculty</th>
                             <th>Head of Department</th>
@@ -52,19 +55,42 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Fill body with for each department -->
                         <tr>
-                            <td>1</td>
-                            <td>Computer Science</td>
-                            <td>Faculty of Science</td>
-                            <td>Dr. Jane Smith</td>
-                            <td>15</td>
-                            <td>12</td>
+                            <td>Computer Science</td> <!-- dept.name -->
+                            <td>Faculty of Science</td> <!-- dept.faculty -->
+                            <td>Dr. Jane Smith</td> <!-- dept.head -->
+                            <td>15</td> <!-- get teachers amount from somewhere? -->
+                            <td>12</td> <!-- get courses amount from somewhere? -->
                             <td>
-                            <div class="action-buttons">
-                                <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
-                            </div>
+                                <!-- Add buttons based on user's current role!! -->
+                                <div class="action-buttons">
+                                    <!-- (?) Ne znam kakva tochno e celta na <i>... -->
+
+                                    <!-- VIEW >>> leads to courses.html filtered by this dept.name ? -->
+                                    <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
+
+                                    <!-- EDIT >>> Name, faculty, dept head should be editable from here! -->
+                                    <!-- (?) Edit functionality: Direct edit or separate page? -->
+                                    <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+
+                                    <!-- DELETE >>> Delete this department; confirmation alert? -->
+                                    <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mathematics</td>
+                            <td>Faculty of Science</td>
+                            <td>Dr. John Doe</td>
+                            <td>10</td>
+                            <td>8</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+                                    <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
