@@ -85,7 +85,7 @@ body {
 
 /* Modal styles */
 .modal {
-    display: none;
+    display: none; /* Hidden!!! */
     position: fixed;
     top: 0;
     left: 0;
