@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Add Teacher</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/responsive.css"/>
+    <link rel="stylesheet" href="../css/tables.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+</head>
+<body>
+<header>
+    <nav class="topnav">
+        <div class="nav-links">
+            <a href="../departments/departments.html">Departments</a>
+            <a href="../courses/courses.html" class="active">Courses</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="../students/students.html">Students</a>
+            <a href="../faculties/faculties.html">Faculties</a>
+            <a href="../programs/programs.html">Programs</a>
+            <a href="../statistics/statistics.html">Statistics</a>
+        </div>
+        <div class="auth-buttons">
+            <button id="logout-btn" class="btn warning">Logout</button>
+        </div>
+    </nav>
+</header>
+
+<main class="form-page">
+    <div class="form-container"><h1>Add New Teacher</h1>
+        <form id="add-teacher-form">
+            <div class="form-group">
+                <label for="teacher-name">Full Name</label>
+                <input type="text" id="teacher-name" required/>
+            </div>
+            <div class="form-group">
+                <label for="teacher-dept">Department</label>
+                <select id="teacher-dept" required>
+                    <option value="">-- Select Department --</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="qualified-courses">Qualified Courses</label>
+                <input type="text" id="qualified-courses" placeholder="Separate with commas"/>
+            </div>
+            <button type="submit" class="btn primary">Add Teacher</button>
+        </form>
+    </div>
+
+</main>
+</body>
+</html>

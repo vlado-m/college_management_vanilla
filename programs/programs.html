@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Programs Management</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/responsive.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/tables.css"/>
+    <script src="https://kit.fontawesome.com/64727f0e11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <nav class="topnav">
+        <div class="nav-links">
+            <a href="../departments/departments.html">Departments</a>
+            <a href="../courses/courses.html">Courses</a>
+            <a href="../teachers/teachers.html">Teachers</a>
+            <a href="../students/students.html">Students</a>
+            <a href="../faculties/faculties.html">Faculties</a>
+            <a href="programs.html">Programs</a>
+            <a href="../statistics/statistics.html">Statistics</a>
+        </div>
+        <div class="auth-buttons">
+            <button id="logout-btn" class="btn warning">Logout</button>
+        </div>
+    </nav>
+</header>
+
+<main id="content">
+    <section class="section">
+        <h1>Programs Management</h1>
+        <div class="toolbar">
+            <a href="add-program.html" class="btn primary">Add Program</a>
+        </div>
+
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Program Name</th>
+                    <th>Department</th>
+                    <th>Duration (Years)</th>
+                    <th>Degree</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Example Row -->
+                <tr>
+                    <td>Software Engineering</td>
+                    <td>Computer Science</td>
+                    <td>4</td>
+                    <td>Bachelor</td>
+                    <td>
+                        <div class="action-buttons">
+                            <a href="view-program.html" class="action-btn view-btn"><i class="fas fa-eye"></i></a>
+                            <a href="edit-program.html" class="action-btn edit-btn"><i class="fas fa-edit"></i></a>
+                            <a href="delete-program.html" class="action-btn delete-btn"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Additional rows will be inserted dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<script src="../js/data.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

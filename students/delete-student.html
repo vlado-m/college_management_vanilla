@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Student</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/tables.css">
+</head>
+<body>
+<nav class="topnav">
+    <div class="nav-links">
+        <a href="../departments/departments.html">Departments</a>
+        <a href="../courses/courses.html">Courses</a>
+        <a href="../teachers/teachers.html">Teachers</a>
+        <a href="students.html" class="active">Students</a>
+        <a href="../faculties/faculties.html">Faculties</a>
+        <a href="../programs/programs.html">Programs</a>
+        <a href="../statistics/statistics.html">Statistics</a>
+    </div>
+    <div class="auth-buttons">
+        <button id="logout-btn" class="btn warning">Logout</button>
+    </div>
+</nav>
+<main class="form-page">
+    <div class="form-container">
+        <h1>Delete Student</h1>
+        <p>Are you sure you want to delete <strong>Maria Ivanova</strong> from the system?</p>
+        <form id="delete-student-form">
+            <input type="hidden" id="dept-id" value="1"/>
+            <button type="submit" class="btn warning">Yes, Delete</button>
+            <a href="students.html" class="btn secondary">Cancel</a>
+        </form>
+    </div>
+</main>
+</body>
+</html>
