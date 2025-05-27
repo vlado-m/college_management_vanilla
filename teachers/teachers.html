@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Teachers - College Management System</title>
+    <script src="https://kit.fontawesome.com/64727f0e11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/responsive.css"/>
+    <link rel="stylesheet" href="../css/tables.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+</head>
+<body>
+<header>
+    <nav class="topnav">
+        <div class="nav-links">
+            <a href="../departments/departments.html">Departments</a>
+            <a href="../courses/courses.html" class="active">Courses</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="../students/students.html">Students</a>
+            <a href="../faculties/faculties.html">Faculties</a>
+            <a href="../programs/programs.html">Programs</a>
+            <a href="../statistics/statistics.html">Statistics</a>
+        </div>
+        <div class="auth-buttons">
+            <button id="logout-btn" class="btn warning">Logout</button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="section">
+        <h1>Teachers Management</h1>
+        <div class="toolbar">
+            <a href="add-teacher.html" class="btn primary">Add Teacher</a>
+        </div>
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Qualified Courses</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Sample Data -->
+                <tr>
+                    <td>Dr. Alice Cooper</td>
+                    <td>Computer Science</td>
+                    <td>Programming, Databases</td>
+                    <td>
+                        <div class="action-buttons">
+                            <a href="view-teacher.html" class="action-btn view-btn" title="View"><i
+                                    class="fas fa-eye"></i></a>
+                            <a href="edit-teacher.html" class="action-btn edit-btn" title="Edit"><i
+                                    class="fas fa-edit"></i></a>
+                            <a href="delete-teacher.html" class="action-btn delete-btn" title="Delete"><i
+                                    class="fas fa-trash"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Add dynamic data here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+</body>
+</html>
