@@ -54,3 +54,28 @@
         margin: 0.5rem 0;
     }
 }
+
+/* Responsive: max-width 600px */
+@media screen and (max-width: 600px) {
+        .topnav .nav-links { 
+        display: none; 
+        width: 100%; 
+}
+    .topnav .icon {
+        float: right; 
+        display: block; 
+        color: #fff;
+        padding: 14px 16px; 
+        cursor: pointer;
+  }
+    .topnav.responsive .nav-links {
+        display: block; 
+        float: none; 
+        text-align: left;
+  }
+    .topnav.responsive .nav-links a {
+        float: none; 
+        display: block; 
+        width: 100%;
+  }
+}
