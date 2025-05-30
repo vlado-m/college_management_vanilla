@@ -36,11 +36,23 @@
             </div>
             <div class="form-group">
                 <label for="faculty">Faculty:</label>
-                <input type="text" id="faculty" required/>
+                <select id="dept-faculty" name="dept-faculty" required/>
+                    <option value="">Select Faculty</option>
+                    <!-- Fill dynamically -->
+                    <option value="science">Faculty of Science</option>
+                    <option value="arts">Faculty of Arts</option>
+                    <option value="engineering">Faculty of Engineering</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="dept-head">Head of Department:</label>
-                <input type="text" id="dept-head" required/>
+                <select id="dept-head" name="dept-head" required/>
+                    <option value="">Select Head Teacher</option>
+                    <!-- Fill dynamically from existing teachers WHICH ARENT HEADS!! -->
+                    <option value="jane_smith">Dr. Jane Smith</option>
+                    <option value="john_doe">Dr. John Doe</option>
+                    <option value="alice_jones">Dr. Alice Jones</option>
+                </select>
             </div>
             <button type="submit" class="btn primary">Add Department</button>
             <a href="departments.html" class="btn secondary">Cancel</a>
