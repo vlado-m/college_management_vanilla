@@ -25,20 +25,12 @@
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
-    #main-nav {
+    #main-nav, .topnav {
         flex-direction: column;
     }
     
     .card-container {
         grid-template-columns: 1fr;
-    }
-}
-
-/* Small mobile adjustments */
-@media screen and (max-width: 480px) {
-    .form-group label,
-    .form-group input {
-        font-size: 14px;
     }
 }
 
@@ -55,27 +47,39 @@
     }
 }
 
-/* Responsive: max-width 600px */
-@media screen and (max-width: 600px) {
-        .topnav .nav-links { 
-        display: none; 
-        width: 100%; 
-}
-    .topnav .icon {
-        float: right; 
-        display: block; 
-        color: #fff;
-        padding: 14px 16px; 
-        cursor: pointer;
+/* NAV WRAP UNDER 840px (840 instead of 600 due to amount of links) */
+@media screen and (max-width: 840px) {
+  .topnav {
+    flex-wrap: wrap;
   }
-    .topnav.responsive .nav-links {
-        display: block; 
-        float: none; 
-        text-align: left;
+
+  .topnav .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
-    .topnav.responsive .nav-links a {
-        float: none; 
-        display: block; 
-        width: 100%;
+
+  /* Each link takes about half the row, touch-friendly */
+  .topnav .nav-links a {
+    flex: 0 0 auto;
+    margin: 0 0.5rem;;
+    padding: 10px 0;
+    border-bottom: none;  /* remove desktop underline style */
+  }
+
+  /* Auth buttons also wrap on their own line */
+  .topnav .auth-buttons {
+    width: 100%;
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+
+  .topnav .auth-buttons a {
+    flex: 1 0 auto;
+    text-align: center;
   }
 }
